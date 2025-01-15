@@ -5,11 +5,31 @@ body{
 table{
     width:  400px;
     border-collapse: collapse;
+    position: relative;
 }
 
-td{
+thead, tfoot{
+    background-color: black;
+    color: white;
+}
+
+td, th{
     border: 1px solid black;
     padding: 8px;
     /*text-align: left right center;     Alinhamento Horizontal*/
     /*vertical-align: top middle bottom;    Alinhamento Vertical*/    
+}
+
+/*Efeito Zebrado no corpo da tabela*/
+
+tbody > tr:nth-child(2n){
+    background-color: gray ;
+}
+
+
+/* Isso serve para quando o usuario rolar a barra de rolagem os titos possam acompanhalo*/
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: black;
 }
