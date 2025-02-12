@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis voluptas quam. Itaque porro autem ab repellendus provident quas quaerat saepe vitae ratione repellat corporis, ex deserunt eum cupiditate debitis?</p>
+    <iframe src="./segurança2-iframe.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, laboriosam consequatur facilis voluptatibus impedit fugiat eum porro quos quas, culpa iure id nemo laborum similique ipsam iusto neque, maiores odio.</p>  
+
+
+    <!-- sandbox=sandbox é uma configuração basica. Colocando isso ele bloqueia todo e qualquer acesso que outros sites que estao dentro do ifram tentem fazer
+     Uma proteção maior em relação a ataques. Ou seja sandbox=sandbox configurações de segurança no maximo
+     
+
+     allow-same-origin permite coisas da mesma origem
+     
+
+     allow-forms permitindo formularios
+     
+
+     allow-scripts permitindo scripts
+     
+
+     Todo o resto estao ligados para segurança-->
+
+
+     <!-- referrerpolicy ou politica de referencia por padrão é o no-referrer-when-downgrade. Se colocar apenas o no-referrer deixa o que esta carregado drentro do iframe um pouco mais limitado. No-referrer não vai capturar os dados de ninguem. -->
+
+
+
+</body>
+</html>
