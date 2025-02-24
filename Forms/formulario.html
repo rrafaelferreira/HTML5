@@ -65,18 +65,25 @@
 
 
 <!--
-    method=metodo
+    method = método ou metodo de envio.
 
-    Pode usar get e post
+    GET E POST
 
-    *get é um verbo http que sera enviado para o <form action"">
-    *get vai enviar o formulario para o endereço que esta dentro do <form action> no metodo get.
-    (metodo mais utlizado para um campo de pesquisa, pos não precisa esconder os dados)    
+    GET
+    (metodo mais utlizado para um campo de pesquisa, pois não precisa esconder os dados. Bastante usado quando os dados não são de grande importancia referente ao usário. Ou seja dados não sensiveis.) 
+    So podem enviar até 3000 bytes usando o método GET. 
+    Envios de arquivos como fotos o GET não ira conseguir enviar.
 
+    
+        
 
-    *O metodo posts ele fica escondido, não aparece na url mas eles são recebido na url definida porem de outra forma.
-    (metodo mais utulizado para criar alguma coisa, como um usuario)
-    (post= esconde os dados )
+    POST
+    *O método posts ele fica escondido, não aparece na url mas eles são recebido na url definida porem de outra forma.
+    (metodo mais utulizado para criar alguma coisa, como um usuario ou dados sensiveis.)
+    (post = esconde os dados, mas não quer dizer que os dados estão seguros, mas sim ocutos, porem se souber, ainda assim com os dados escondidos eles poderão ser vistos.)
+    Dados com mais de 3000 bytes apenas o método post.
+    E envio de arquivos também se utiliza o método post.
+
 
     (Caso opta por não utilizar nenhum dos dois metodos, por padrão o action vai ser para a mesma pagina que a gente estar e o method é ]o get)
 
