@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Basico</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário!</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+
+
+
+<!--
+    Pra que serve o formulário ?
+
+    - Capturar dados de entrada (input)
+    - Interação
+    - Controle
+
+
+    
+    Input : 
+
+    text = Define um campo de entrada de texto
+    submit = Submeter/Enviar Enviar o formulario
+-->
+
+
+
+
+
+<!--
+
+    Label = etiqueta/rotulo/selo serve para fazer a ligação entre o campo de input e o que vier antes que no caso são as palavras (Nome) e (Sobrenome). Ou seja a palavra (Nome) é a etiqueta para o campo de Input a diante. Isso serve para os outros também.
+
+    Action = é uma ação, essa ação vai ser disparada quando o usuário clicar no butão de submit.
+
+
+    Autocomplete = seria as opções que o proprio formulário sugere quando o usuário clica no campo de input. Podendo aparecer (ON) ou não aparecer (OFF).
+
+
+    Para que os formularios funcionem corretamente eles precisam utilizar uma outra linguagem, as vezes JavaScript ou PHP. Para que a linguagem PHP funcione direito com o formulário é preciso que todo e qualquer Input/Objeto de Entrada tenha um nomou (name).
+
+    Name = é mais util para HTML E PHP. 
+    Id = é mais utilizado no JavaScript.
+
+
+    Label é de extrema importançia. É importante utilizar pra fazer a relação, qual o objeto de formulário e qual a etiqueta dele a relação entre um e outro.
+
+    label for = O for é pra quem ?
+    Coloquei o i na frente dos nomes no campo de ID para que assim possa diferenciar o (name) e o (Id).
+-->
+  
+
+
+
+
+<!--
+    method=metodo
+
+    Pode usar get e post
+
+    *get é um verbo http que sera enviado para o <form action"">
+    *get vai enviar o formulario para o endereço que esta dentro do <form action> no metodo get.
+    (metodo mais utlizado para um campo de pesquisa, pos não precisa esconder os dados)    
+
+
+    *O metodo posts ele fica escondido, não aparece na url mas eles são recebido na url definida porem de outra forma.
+    (metodo mais utulizado para criar alguma coisa, como um usuario)
+    (post= esconde os dados )
+
+    (Caso opta por não utilizar nenhum dos dois metodos, por padrão o action vai ser para a mesma pagina que a gente estar e o method é ]o get)
+
+    *Não se pode criar um form dentro de outro form.
+-->
