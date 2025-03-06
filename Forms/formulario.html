@@ -46,6 +46,14 @@
 
 
     Autocomplete = seria as opções que o proprio formulário sugere quando o usuário clica no campo de input. Podendo aparecer (ON) ou não aparecer (OFF).
+     - Autocomplete
+     *Colocando dentro do input você podera informar o que o campo de input se refere, podendo ser text/numero/new-password/sex/photo/tel e etc.
+    Mas para que isso funcione deve se colocar autocomplete ON no forms. 
+    Ex:
+     <form action="cadastro.php" method="get" autocomplete="on">
+        ...
+     <form/>
+    E depois colocar no input.    
 
 
     Para que os formularios funcionem corretamente eles precisam utilizar uma outra linguagem, as vezes JavaScript ou PHP. Para que a linguagem PHP funcione direito com o formulário é preciso que todo e qualquer Input/Objeto de Entrada tenha um nomou (name).
@@ -88,4 +96,27 @@
     (Caso opta por não utilizar nenhum dos dois metodos, por padrão o action vai ser para a mesma pagina que a gente estar e o method é ]o get)
 
     *Não se pode criar um form dentro de outro form.
+
+
+    - required = requerido
+    * o campo será obrigatório. Fazendo que automaticamente o navegador faça um aviso, informando que o campo é obrigatório.
+
+
+    
+    - minlenght / maxlenght
+    * O número mínimo e/ou maxímo de caracteres para 
+    este campo
+    
+
+    
+    - size
+    * O número aceítavel de caracteres que esse campo devera conter
+    Se o size for menor que o maxlenght, ira ser adicionado uma barra lateral.  
+ 
+
+
+    - placeholder
+    * Mostra um exemplo de texto a ser digitado
+    no campo
+    Um lugar para você colocar coisas/como se fosse uma dica.
 -->
