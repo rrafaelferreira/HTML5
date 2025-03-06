@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formularios</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label> <!--Month/Mes-->
+            <input type="month" name="mes" id="imes" value="2025-09">
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label> <!--Date/Dia-->
+            <input type="date" name="dia" id="idia" value="2006-09-22">
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora" value="12:10">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!--
+    
+    Atributos
+
+
+    Diferente de minlength e maxlength Min/Max serve para números.
+
+
+    Step/passo = de quanto em quanto a nota vai mudando.
+
+
+    Value é o valor que ja vai aparecer preenchido. Porem ele automaticamente tira o placeholder.
+    Ex:
+        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+
+
+
+
+
+    -->
+</body>
+</html>
