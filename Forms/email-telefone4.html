@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx) xxxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+<!--Pattern ou padrão. Utilizado para expressões regulares.
+Toda expressão regular coomeça com ^ e termina com $.
+
+Para ler digitos pode ser barra-d ou 0-9. E depois entre chaves pode ser quantos digitos são.
+Ex: \d  ou [0-9] {D}
+
+{4,5} O usuario pode digitar 4 ou 5 digitos
+
+Para abrir parentese se utiliza \( e para fechar \)-->
+
+
+
+
+<!--Estudar mais sobre RegEX ou expressões regulares-->
+
+
+
+
+<!--
+
+O "autocomplete email" ele nao verifica o que foi digitado no campo se realemnte é um email. E sim se tem um @ no que foi digitado.
+
+Ex: fael927@   -Ele desse jeito digitado ainda vai validar-
+
+
+Placeholder é um exemplo do que deve ser digitado no campo.
+
+
+
+Fieldset é um grupo de campos, envelopamento ou agrupamento de elementos/campos. É possivel configurar via CSS.
+
+Legend = Legenda.
+
+-->
