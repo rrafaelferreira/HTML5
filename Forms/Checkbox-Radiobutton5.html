@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br> 
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br> 
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br> 
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br> 
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br> 
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+
+<!--
+
+No radio o padrao é que voce consegue marca os dois e não apenas um, e depois não consegue desmarca. Para que isso não aconteça no campo "name" precisam ser o mesmo.
+Lembrando que isso não serve para chackbox.
+
+Se caso queira que já apareça algum campo marcado se coloca "checked" no input. E não pode colocar o checked nos dois radio.
+
+Fieldset é um grupo de campos, envelopamento ou agrupamento de elementos/campos. É possivel configurar via CSS.
+
+Legend = Legenda.
+
+-->
+
