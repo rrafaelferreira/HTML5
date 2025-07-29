@@ -7,17 +7,22 @@
 </head>
 <body>
     <h1>Exemplo de Formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <!--Selecionar Cor-->
         <p>
             <label for="icor">Cor: </label>
-            <input type="color" name="cor" id="icor">
+            <input type="color" name="cor" id="icor" value="#00ff00">
         </p>
 
         <!--Nivel de Satisfação-->
         <p>
             <label for="inivel">Nivel de Satisfação: </label>
-            <input type="range" name="nivel" id="inivel">
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="5"
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="foto" id="ifoto">
         </p>
 
         <p>
@@ -27,3 +32,11 @@
     </form>
 </body>
 </html>
+
+<!-- Os controles de cores e entre outros, vão ser apresentados de forma diferente para os navegadores.-->
+
+
+<!--Existe o input image e file. O image apenas o desenvolvedor pode escolher e ja no file o usuario pode escolher também. E para que o image funcione precisa ter funcionalidades em PHP ou JS.-->
+
+
+<!--Quando se utilizar o tipo de controle de envio de arquivos ou metedo de envio de arquivos, não se pode utilizar o metodo/method get e sim o POST.-->
