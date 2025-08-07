@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estados: </label>
+            <select name="estado" id="iest">
+
+                 <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="Rj">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <option value="PE">Pernambuco</option>
+                <option value="MA">Maranhão</option>
+                <option value="RN">Rio Grande do Norte</option>
+            
+            </select>  
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!--Select seria como se fosse uma lista suspensa. Onde voce clica na seta para baixo e aparece uma lista com opções de determinado tema.-->
+<!--Utilizando Select você não consegue digitar, apenas escolher/selecionar.-->
+
+<!--Se for de preferencia pode agrupar usando OPTGROUP-->
+
+
+
+
+<!--Para que a lista suspensa apareca utilizando DATALIST, é preciso que no datalist tenha um ID e um nome de preferencia. E no input que nesse exemplo é uma caixa de texto precisa que tenha o atributo LIST. O nome que coloca no ID precisa ser o mesmo que no atributo LIST.-->
+
+
+<!--A diferença dos dois é que no SELECT o usuário apenas seleciona/marca. Mas já no DATALIST ele pode seleciionar e escrever se for necessário.-->
+
+
+
+
+<!--TEXTAREA ou caixa de texto.
+
+cols = coluna
+rows = linha
+Lembrando que, independente da quantidade que, colocar isso não significa que é o número máximo.
+
+O ideal de quando usar o TEXTAREA é bom colocar o metodo post, para que não ocorra problema de limitação. Pois todo formulário que usa GET, apresenta um limite de no máximo 3000 mil bytes para enviar.-->
+
